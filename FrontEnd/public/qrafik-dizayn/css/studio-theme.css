@@ -1,0 +1,196 @@
+﻿/* Align the course clone accents with Webora purple. Structure stays. */
+
+.qrafik-dizayn-root {
+  --accent: #6537A6;
+  --accent-dark: #3a294f;
+  --accent-soft: rgba(101, 55, 166, 0.12);
+  color: #20172a;
+}
+
+.qrafik-dizayn-root .code-caveat-h2-bold,
+.qrafik-dizayn-root .code-caveat-h3-bold,
+.qrafik-dizayn-root .code-caveat-h4-bold,
+.qrafik-dizayn-root .code-caveat-h5-bold,
+.qrafik-dizayn-root .code-caveat-h6-bold {
+  color: #6537A6;
+}
+
+.qrafik-dizayn-root .code-btn-base,
+.qrafik-dizayn-root .code-btn-dark {
+  background-color: #6537A6;
+  color: #fff;
+}
+
+.qrafik-dizayn-root .code-btn-hover-dark:hover,
+.qrafik-dizayn-root .code-btn-hover-base:hover,
+.qrafik-dizayn-root .code-btn-base:hover,
+.qrafik-dizayn-root .code-btn-dark:hover {
+  background-color: #3a294f !important;
+  color: #fff;
+}
+
+.qrafik-dizayn-root .code-education-banner {
+  padding: 36px 56px;
+  box-shadow: 0 12px 28px rgba(101, 55, 166, 0.06);
+  border: 1px solid #d9e2ea;
+}
+
+.qrafik-dizayn-root .code-education-banner ul li {
+  background: #f1f6f9;
+  color: #6537A6;
+  font-weight: 600;
+}
+
+.qrafik-dizayn-root .code-education-main .code-education-menu .code-education-menu-top ul a.active {
+  background: var(--accent-soft);
+  color: #6537A6;
+}
+
+.qrafik-dizayn-root .code-education-main .code-education-menu .code-education-menu-bottom {
+  border: 1px solid #d9e2ea;
+}
+
+.qrafik-dizayn-root .code-education-main .code-education-apply .code-apply-select .code-apply-select-option.active,
+.qrafik-dizayn-root .code-education-main .code-education-apply .code-apply-select .code-apply-select-item.active {
+  border-color: #6537A6;
+  background-color: var(--accent-soft);
+}
+
+.qrafik-dizayn-root .code-education-main .code-education-apply .code-apply-select .form-check-input:checked[type="radio"] {
+  border-color: #6537A6;
+}
+
+.qrafik-dizayn-root .code-education-main .code-education-apply #page2 .code-apply-select input:focus,
+.qrafik-dizayn-root .code-education-main .code-education-apply .code-apply-select-item input:focus,
+.qrafik-dizayn-root .code-education-arrange-meeting-form .code-apply-select input:focus {
+  border: 1px solid #6537A6;
+  background-color: var(--accent-soft);
+}
+
+.qrafik-dizayn-root .code-education-main .code-education-question .tag li.active::after {
+  background-color: #6537A6;
+}
+
+.qrafik-dizayn-root .code-education-main .code-education-certificate div.d-flex.justify-content-between ul li::after {
+  background: #6537A6;
+}
+
+.qrafik-dizayn-root .code-education-main .code-education-salary .code-education-salary-positions .code-education-salary-position:nth-child(2) {
+  background: var(--accent-soft);
+  border-color: #6537A6;
+}
+
+.qrafik-dizayn-root .code-education-main .code-education-salary .code-education-salary-positions .code-education-salary-position:nth-child(2) .code-visby-subtitle1-medium,
+.qrafik-dizayn-root .code-education-main .code-education-salary .code-education-salary-positions .code-education-salary-position:nth-child(2) h4,
+.qrafik-dizayn-root .code-education-main .code-education-salary .code-education-salary-positions .code-education-salary-position:nth-child(2) .h4 {
+  color: #6537A6;
+}
+
+.qrafik-dizayn-root .overlay .popup {
+  background: #fff;
+  color: #20172a;
+  border-radius: 20px;
+  box-shadow: 0 18px 45px rgba(32, 23, 42, 0.18);
+}
+
+.qrafik-dizayn-root .overlay .btn-left {
+  background: #f1f6f9;
+  color: #20172a;
+}
+
+.qrafik-dizayn-root .overlay .btn-left:hover {
+  background: #e3e9ef;
+}
+
+.qrafik-dizayn-root .overlay .btn-right {
+  background: #6537A6;
+  color: #fff;
+}
+
+.qrafik-dizayn-root .overlay .btn-right:hover {
+  background: #3a294f;
+  color: #fff;
+}
+
+.qrafik-dizayn-root .edu-btns a {
+  background: #6537A6;
+  color: #fff;
+}
+
+.qrafik-dizayn-root .edu-left {
+  background: #f1f6f9;
+}
+
+.qrafik-dizayn-root .code-education-banner-join .code-btn-small,
+.qrafik-dizayn-root .code-education-banner-join .button-info {
+  background: var(--accent-soft);
+  color: #6537A6;
+}
+
+.qrafik-dizayn-root .inner-about-short.active,
+.qrafik-dizayn-root .questions-item.active {
+  border-color: #6537A6;
+}
+
+.qrafik-dizayn-root .code-education-student-works .code-education-student-project button {
+  background-color: #6537A6;
+  color: #fff;
+}
+
+/* The page shell already shares MainLayout's responsive container with the
+   header. Avoid adding a second horizontal gutter inside every service page. */
+.qrafik-dizayn-root .code-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* The source markup uses lazy image classes. Declare the icon boxes explicitly
+   so SVG and raster service icons keep a visible, stable footprint. */
+.qrafik-dizayn-root .code-education-menu-mobile .menu-icon img,
+.qrafik-dizayn-root .code-education-menu-mobile .close-icon img {
+  display: block !important;
+  width: 20px;
+  height: 20px;
+  max-width: 100%;
+  object-fit: contain;
+  opacity: 1;
+  visibility: visible;
+}
+
+.qrafik-dizayn-root .code-education-main .code-education-advantages-part-one-card > img {
+  display: block !important;
+  width: 64px !important;
+  height: 64px !important;
+  max-width: 100%;
+  object-fit: contain;
+  opacity: 1;
+  visibility: visible;
+}
+
+.qrafik-dizayn-root .code-education-main .inner-about-logo-item .img img {
+  display: block !important;
+  width: 40px !important;
+  height: 40px !important;
+  max-width: 100%;
+  object-fit: contain;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Service routes keep the IT Business Analysis spacing and card geometry.
+   The purple tokens above remain the only accent source. */
+.it-business-analysis-reference-root.qrafik-dizayn-root .code-education-banner {
+  padding: 40px 80px 40px 64px;
+  border: 0;
+  box-shadow: none;
+}
+
+.it-business-analysis-reference-root.qrafik-dizayn-root .code-education-main .code-education-menu .code-education-menu-bottom {
+  border: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .it-business-analysis-reference-root.qrafik-dizayn-root .code-education-banner {
+    padding: 24px 16px;
+  }
+}

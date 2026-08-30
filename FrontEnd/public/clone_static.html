@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* { box-sizing: border-box; margin:0; padding:0; }
+body { background:#F4F6FA; font-family: sans-serif; }
+.code-container { padding: 0 12px; max-width:1320px; margin:0 auto; }
+/* 1:1 copy from code.edu.az mainnew.css@v=1.0552.css — Tədris proqramları */
+@font-face {
+  font-family: 'Visby CF';
+  src: url("/fonts/VisbyCF-Medium.woff2") format("woff2"), url("/fonts/VisbyCF-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Visby CF DemiBold';
+  src: url("/fonts/VisbyCF-DemiBold.woff2") format("woff2"), url("/fonts/VisbyCF-DemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Visby CF Bold';
+  src: url("/fonts/VisbyCF-Bold.woff2") format("woff2"), url("/fonts/VisbyCF-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Visby typography - exact from mainnew.css */
+.code-visby-h4-bold {
+  color: #13171a;
+  font-family: Visby CF Bold;
+  font-size: 36px;
+  line-height: 48px;
+}
+.code-visby-body1-demibold {
+  color: #13171a;
+  font-family: Visby CF DemiBold;
+  font-size: 18px;
+  line-height: 28px;
+}
+.code-visby-subtitle1-medium {
+  color: #62717c;
+  font-family: Visby CF DemiBold;
+  font-size: 14px;
+  line-height: 20px;
+}
+.code-visby-subtitle1-demibold {
+  color: #13171a;
+  font-family: Visby CF DemiBold;
+  font-size: 14px;
+  line-height: 20px;
+}
+.code-visby-body2-medium {
+  color: #62717c;
+  font-family: Visby CF;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Buttons - exact */
+.code-btn, .code-btn-base, .code-btn-black, .code-btn-white {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: 0;
+  font-family: Visby CF DemiBold;
+  font-size: 14px;
+  color: #13171a;
+  transition: all 0.5s;
+  cursor: pointer !important;
+}
+.code-btn-medium {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.code-btn-black {
+  background: #13171a;
+  color: #fff;
+  border-radius: 1000px;
+}
+.code-btn-blackDark {
+  background-color: #374149;
+}
+
+/* Bootstrap minimal utils needed for 1:1 */
+.d-flex { display: flex !important; }
+.d-grid { display: grid !important; }
+.d-inline-block { display: inline-block !important; }
+.d-none { display: none !important; }
+.w-100 { width: 100% !important; }
+.w-auto { width: auto !important; }
+.justify-content-between { justify-content: space-between !important; }
+.justify-content-center { justify-content: center !important; }
+.align-items-start { align-items: flex-start !important; }
+.align-items-center { align-items: center !important; }
+.flex-column { flex-direction: column !important; }
+.gap-2 { gap: 0.5rem !important; }
+.rounded-circle { border-radius: 50% !important; }
+.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+.text-center { text-align: center !important; }
+
+/* homecoursenav - exact */
+.homecoursenav {
+  justify-content: right;
+}
+@media(max-width:768px){
+  .homecoursenav{
+    margin-top:16px
+  }
+}
+
+/* CODE-HOME-STUDY-AREAS — must come BEFORE all-courses to preserve cascade (all-courses overrides) */
+.code-home-study-areas .code-study-areas-cards {
+  padding: 15px 0px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8px;
+}
+  .code-home-study-areas .code-study-areas-cards .code-study-areas-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s ease all;
+    display: none;
+  }
+    .code-home-study-areas .code-study-areas-cards .code-study-areas-card:hover .main-img img {
+      scale: 1.2;
+    }
+    .code-home-study-areas .code-study-areas-cards .code-study-areas-card .main-img img {
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+      transition: 0.3s ease all;
+    }
+    .code-home-study-areas .code-study-areas-cards .code-study-areas-card a {
+      padding: 20px;
+      display: inline-block;
+      width: 100%;
+    }
+    .code-home-study-areas .code-study-areas-cards .code-study-areas-card p {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .code-home-study-areas .code-study-areas-cards .code-study-areas-card:hover {
+      background: #ebeef2;
+      cursor: pointer;
+    }
+      .code-home-study-areas .code-study-areas-cards .code-study-areas-card:hover span {
+        background: #ffc800;
+      }
+        .code-home-study-areas .code-study-areas-cards .code-study-areas-card:hover span svg path {
+          stroke: #000;
+        }
+    .code-home-study-areas .code-study-areas-cards .code-study-areas-card .code-study-areas-card-header {
+      gap: 8px;
+    }
+    .code-home-study-areas .code-study-areas-cards .code-study-areas-card span {
+      padding: 6px;
+      background: #f4f6fa;
+      transition: 0.3s ease all;
+    }
+    .code-home-study-areas .code-study-areas-cards .code-study-areas-card p {
+      margin-bottom: 12px;
+      margin-top: 4px;
+    }
+
+.code-home-study-areas button.more-btn {
+  display: flex;
+  padding-left: 10px;
+  cursor: pointer;
+}
+  .code-home-study-areas button.more-btn:hover {
+    background-color: #374149;
+  }
+
+@media screen and (max-width: 992px) {
+  .code-home-study-areas h4, .code-home-study-areas .h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .code-home-study-areas .code-study-areas-cards {
+    padding: 16px 0px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* CODE-ALL-COURSES-STUDY-AREAS — comes AFTER home, so its padding 32px wins when both classes present */
+.code-all-courses-study-areas h2, .code-all-courses-study-areas .h2,
+.code-all-courses-study-areas h1, .code-all-courses-study-areas .h1 {
+  padding: 40px 0px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+.code-all-courses-study-areas .course-type {
+  display: inline-flex;
+}
+  .code-all-courses-study-areas .course-type li {
+    padding: 10px 16px;
+    background-color: #ebeef2;
+    border-radius: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.5s;
+  }
+    .code-all-courses-study-areas .course-type li.active {
+      background-color: #dfe4eb;
+    }
+    .code-all-courses-study-areas .course-type li:hover {
+      background-color: #dfe4eb;
+    }
+
+.code-all-courses-study-areas .code-study-areas-cards {
+  padding: 32px 0px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8px;
+}
+  .code-all-courses-study-areas .code-study-areas-cards .code-study-areas-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s ease all;
+    display: none;
+  }
+    .code-all-courses-study-areas .code-study-areas-cards .code-study-areas-card .main-img img {
+      height: 200px;
+      max-width: 100%;
+      object-fit: cover;
+    }
+    .code-all-courses-study-areas .code-study-areas-cards .code-study-areas-card a {
+      padding: 20px;
+      display: inline-block;
+      width: 100%;
+    }
+    .code-all-courses-study-areas .code-study-areas-cards .code-study-areas-card p {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .code-all-courses-study-areas .code-study-areas-cards .code-study-areas-card:hover {
+      background: #ebeef2;
+      cursor: pointer;
+    }
+      .code-all-courses-study-areas .code-study-areas-cards .code-study-areas-card:hover span {
+        background: #ffc800;
+      }
+        .code-all-courses-study-areas .code-study-areas-cards .code-study-areas-card:hover span svg path {
+          stroke: #000;
+        }
+    .code-all-courses-study-areas .code-study-areas-cards .code-study-areas-card .code-study-areas-card-header {
+      gap: 8px;
+    }
+    .code-all-courses-study-areas .code-study-areas-cards .code-study-areas-card span {
+      padding: 6px;
+      background: #f4f6fa;
+      transition: 0.3s ease all;
+    }
+    .code-all-courses-study-areas .code-study-areas-cards .code-study-areas-card p {
+      margin-bottom: 12px;
+      margin-top: 4px;
+    }
+
+.code-all-courses-study-areas button.more-btn {
+  display: flex;
+  padding-left: 10px;
+  cursor: pointer;
+}
+  .code-all-courses-study-areas button.more-btn:hover {
+    background-color: #374149;
+  }
+
+@media screen and (max-width: 992px) {
+  .code-all-courses-study-areas h4, .code-all-courses-study-areas .h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .code-all-courses-study-areas .code-study-areas-cards {
+    padding: 16px 0px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* card h3 ellipsis - exact from mainnew.css */
+.code-study-areas-card-h3-div h3{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.code-study-areas-card-h3-div {
+  overflow: hidden;
+}
+
+/* React helper: override display:none for visible cards — 1:1 visual but display:grid parent handles layout */
+.code-study-areas-card.is-visible {
+  display: block !important;
+}
+
+/* Section outer — preserve gap from code-home-main if needed */
+.code-home-study-areas {
+  /* no extra padding, matches original */
+}
+
+/* Ensure section centered like container on large screens? Original has no container but we keep full width with same body bg #F4F6FA */
+.programs-section-wrapper {
+  background: transparent;
+}
+
+</style>
+</head>
+<body>
+<div class="code-container"><div class="code-home-main" style="display:flex;flex-direction:column;gap:0;">
+<section class="code-home-study-areas code-all-courses-study-areas ">
+    <h4 class="code-visby-h4-bold">Tədris proqramları</h4>
+    <div class="d-flex homecoursenav">
+      <ul class="course-type gap-2 code-visby-subtitle1-demibold big">
+          <li class="d-inline-block w-auto active" data-for="all">Hamısı</li>
+          <li class="d-inline-block w-auto " data-for="starter">Başlanğıc mərhələ</li>
+          <li class="d-inline-block w-auto " data-for="upgrader">Karyera inkişafı</li>
+      </ul>
+    </div>
+    <div class="code-study-areas-cards d-grid tab-content">
+
+                          <div class="code-study-areas-card edulevel_starter is-visible">
+                      <a href="https://code.edu.az/tedris-saheleri/ai-for-everyonee/">
+                          <div style="min-height:85px">
+                            <div class="d-flex justify-content-between align-items-start code-study-areas-card-header">
+                                <div class="code-study-areas-card-h3-div">
+                                  <h3 class="code-visby-body1-demibold w-100" >AI for Everyone</h3>
+                                </div>
+                                <span class="rounded-circle d-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                      <path d="M7.5 15L12.5 10L7.5 5" stroke="#62717C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <p class="code-visby-subtitle1-medium">Növbəti mərhələyə bizimlə keç</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-center  main-img">
+                              <img src="https://code.edu.az/wp-content/uploads/2026/05/AI-for-everyone-scaled_png.webp" alt="hero_bloku" />
+                          </div>
+                      </a>
+                  </div>
+                          <div class="code-study-areas-card edulevel_starter is-visible">
+                      <a href="https://code.edu.az/tedris-saheleri/proqramlasdirma/suni-intellekt-destekli-programlashdirma/">
+                          <div style="min-height:85px">
+                            <div class="d-flex justify-content-between align-items-start code-study-areas-card-header">
+                                <div class="code-study-areas-card-h3-div">
+                                  <h3 class="code-visby-body1-demibold w-100" >Süni intellekt dəstəkli Proqramlaşdırma</h3>
+                                </div>
+                                <span class="rounded-circle d-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                      <path d="M7.5 15L12.5 10L7.5 5" stroke="#62717C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <p class="code-visby-subtitle1-medium">Proqramlaşdırma öyrənməyin kodu dəyişir!</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-center  main-img">
+                              <img src="https://code.edu.az/wp-content/uploads/2023/10/Back-End_png.webp" alt="hero_bloku" />
+                          </div>
+                      </a>
+                  </div>
+                          <div class="code-study-areas-card edulevel_starter is-visible">
+                      <a href="https://code.edu.az/tedris-saheleri/dizayn/qrafik-dizayn-v%c9%99-vizual-kommunikasiyalar/">
+                          <div style="min-height:85px">
+                            <div class="d-flex justify-content-between align-items-start code-study-areas-card-header">
+                                <div class="code-study-areas-card-h3-div">
+                                  <h3 class="code-visby-body1-demibold w-100" >Qrafik Dizayn və Vizual Kommunikasiyalar</h3>
+                                </div>
+                                <span class="rounded-circle d-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                      <path d="M7.5 15L12.5 10L7.5 5" stroke="#62717C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <p class="code-visby-subtitle1-medium">Gələcəyini dizayn etməyə bu gündən başla</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-center  main-img">
+                              <img src="https://code.edu.az/wp-content/uploads/2021/08/Graphic-Design-1_png.webp" alt="hero_bloku" />
+                          </div>
+                      </a>
+                  </div>
+                          <div class="code-study-areas-card edulevel_starter is-visible">
+                      <a href="https://code.edu.az/tedris-saheleri/kiber-tehlukesizlik/">
+                          <div style="min-height:85px">
+                            <div class="d-flex justify-content-between align-items-start code-study-areas-card-header">
+                                <div class="code-study-areas-card-h3-div">
+                                  <h3 class="code-visby-body1-demibold w-100" >Kibertəhlükəsizlik</h3>
+                                </div>
+                                <span class="rounded-circle d-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                      <path d="M7.5 15L12.5 10L7.5 5" stroke="#62717C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <p class="code-visby-subtitle1-medium">kibertəhlükəsizlik nədir?</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-center  main-img">
+                              <img src="https://code.edu.az/wp-content/uploads/2024/02/Cyber-Sec_png.webp" alt="hero_bloku" />
+                          </div>
+                      </a>
+                  </div>
+                          <div class="code-study-areas-card edulevel_starter is-visible">
+                      <a href="https://code.edu.az/tedris-saheleri/dizayn/2d-motion-dizayn/">
+                          <div style="min-height:85px">
+                            <div class="d-flex justify-content-between align-items-start code-study-areas-card-header">
+                                <div class="code-study-areas-card-h3-div">
+                                  <h3 class="code-visby-body1-demibold w-100" >2D Motion Dizayn</h3>
+                                </div>
+                                <span class="rounded-circle d-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                      <path d="M7.5 15L12.5 10L7.5 5" stroke="#62717C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <p class="code-visby-subtitle1-medium">Yaradıcılığını hərəkətə gətir!</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-center  main-img">
+                              <img src="https://code.edu.az/wp-content/uploads/2021/08/2D-Motion_png.webp" alt="hero_bloku" />
+                          </div>
+                      </a>
+                  </div>
+                          <div class="code-study-areas-card edulevel_starter is-visible">
+                      <a href="https://code.edu.az/tedris-saheleri/dizayn/digital-memarliq-ve-3d/">
+                          <div style="min-height:85px">
+                            <div class="d-flex justify-content-between align-items-start code-study-areas-card-header">
+                                <div class="code-study-areas-card-h3-div">
+                                  <h3 class="code-visby-body1-demibold w-100" >Digital Memarlıq və 3D</h3>
+                                </div>
+                                <span class="rounded-circle d-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                      <path d="M7.5 15L12.5 10L7.5 5" stroke="#62717C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <p class="code-visby-subtitle1-medium">Memar və ya 3D dizayner kimi gələcəyini inşa et.</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-center  main-img">
+                              <img src="https://code.edu.az/wp-content/uploads/2021/07/Digital-Memarliq_png.webp" alt="hero_bloku" />
+                          </div>
+                      </a>
+                  </div>
+                          <div class="code-study-areas-card edulevel_starter is-visible">
+                      <a href="https://code.edu.az/tedris-saheleri/marketing/digital-marketing-professional-dmi/">
+                          <div style="min-height:85px">
+                            <div class="d-flex justify-content-between align-items-start code-study-areas-card-header">
+                                <div class="code-study-areas-card-h3-div">
+                                  <h3 class="code-visby-body1-demibold w-100" >Digital Marketing Professional - DMI Pro</h3>
+                                </div>
+                                <span class="rounded-circle d-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                      <path d="M7.5 15L12.5 10L7.5 5" stroke="#62717C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <p class="code-visby-subtitle1-medium">Digital kampaniyaların axtarılan professionalına çevril.</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-center  main-img">
+                              <img src="https://code.edu.az/wp-content/uploads/2021/07/Digital-Marketing_png.webp" alt="hero_bloku" />
+                          </div>
+                      </a>
+                  </div>
+                          <div class="code-study-areas-card edulevel_starter is-visible">
+                      <a href="https://code.edu.az/tedris-saheleri/analitika/data-analitika/">
+                          <div style="min-height:85px">
+                            <div class="d-flex justify-content-between align-items-start code-study-areas-card-header">
+                                <div class="code-study-areas-card-h3-div">
+                                  <h3 class="code-visby-body1-demibold w-100" >Data Analitika</h3>
+                                </div>
+                                <span class="rounded-circle d-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                      <path d="M7.5 15L12.5 10L7.5 5" stroke="#62717C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <p class="code-visby-subtitle1-medium">Datanı qərarlara çevir!</p>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-center  main-img">
+                              <img src="https://code.edu.az/wp-content/uploads/2024/07/image0_png.webp" alt="hero_bloku" />
+                          </div>
+                      </a>
+                  </div>
+      </div>
+    <button class="code-btn-medium code-btn-black mx-auto more-btn">
+        <img src="https://code.edu.az/wp-content/themes/codev2024/assets/icons/plus-circle.svg" alt="plus circle" width="20" height="20"> Daha çox</button>
+</section>
+</div></div>
+</body>
+</html>

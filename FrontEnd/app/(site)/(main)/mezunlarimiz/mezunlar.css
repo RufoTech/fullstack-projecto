@@ -1,0 +1,1756 @@
+﻿html:has(.code-mezunlar-page),
+html:has(.code-mezunlar-page) body {
+  background-color: #f1f6f9;
+  font-family: "Visby CF";
+  color: #20172a;
+}
+
+.code-mezunlar-page {
+  background-color: #f1f6f9;
+  font-family: "Visby CF";
+  color: #20172a;
+  min-height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.code-mezunlar-page *,
+.code-mezunlar-page *::before,
+.code-mezunlar-page *::after {
+  box-sizing: border-box;
+}
+
+.code-mezunlar-page h1,
+.code-mezunlar-page h2,
+.code-mezunlar-page h3,
+.code-mezunlar-page h4,
+.code-mezunlar-page h5,
+.code-mezunlar-page h6,
+.code-mezunlar-page p,
+.code-mezunlar-page ul,
+.code-mezunlar-page li,
+.code-mezunlar-page a,
+.code-mezunlar-page img,
+.code-mezunlar-page svg,
+.code-mezunlar-page section,
+.code-mezunlar-page main,
+.code-mezunlar-page div,
+.code-mezunlar-page span,
+.code-mezunlar-page button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.code-mezunlar-page ul {
+  list-style: none;
+}
+
+.code-mezunlar-page a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.code-mezunlar-page a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.code-mezunlar-page img,
+.code-mezunlar-page svg {
+  vertical-align: middle;
+  max-width: none;
+}
+
+.code-mezunlar-page button {
+  background: none;
+  font-family: inherit;
+}
+
+/* Bootstrap-like utilities */
+.code-mezunlar-page .d-flex { display: flex !important; }
+.code-mezunlar-page .d-grid { display: grid !important; }
+.code-mezunlar-page .d-none { display: none !important; }
+.code-mezunlar-page .d-block { display: block !important; }
+.code-mezunlar-page .flex-column { flex-direction: column !important; }
+.code-mezunlar-page .flex-wrap { flex-wrap: wrap !important; }
+.code-mezunlar-page .flex-nowrap { flex-wrap: nowrap !important; }
+.code-mezunlar-page .align-items-center { align-items: center !important; }
+.code-mezunlar-page .justify-content-center { justify-content: center !important; }
+.code-mezunlar-page .justify-content-between { justify-content: space-between !important; }
+.code-mezunlar-page .mx-auto { margin-right: auto !important; margin-left: auto !important; }
+.code-mezunlar-page .m-auto { margin: auto !important; }
+.code-mezunlar-page .mb-1 { margin-bottom: 0.25rem !important; }
+.code-mezunlar-page .mb-2 { margin-bottom: 0.5rem !important; }
+.code-mezunlar-page .mb-4 { margin-bottom: 1.5rem !important; }
+.code-mezunlar-page .mt-1 { margin-top: 0.25rem !important; }
+.code-mezunlar-page .mt-2 { margin-top: 0.5rem !important; }
+.code-mezunlar-page .mt-3 { margin-top: 1rem !important; }
+.code-mezunlar-page .my-3 { margin-top: 1rem !important; margin-bottom: 1rem !important; }
+.code-mezunlar-page .gap-2 { gap: 0.5rem !important; }
+.code-mezunlar-page .gap-4 { gap: 1.5rem !important; }
+.code-mezunlar-page .text-center { text-align: center !important; }
+.code-mezunlar-page .text-end { text-align: right !important; }
+.code-mezunlar-page .w-50 { width: 50%; }
+.code-mezunlar-page .w-75 { width: 75%; }
+.code-mezunlar-page .w-65 { width: 65%; }
+.code-mezunlar-page .w-100 { width: 100%; }
+.code-mezunlar-page .h-100 { height: 100%; }
+.code-mezunlar-page .col-12 { flex: 0 0 auto; width: 100%; }
+.code-mezunlar-page .col-6 { flex: 0 0 auto; width: 50%; }
+.code-mezunlar-page .position-relative { position: relative !important; }
+.code-mezunlar-page .rounded-circle { border-radius: 50% !important; }
+.code-mezunlar-page .fw-semibold { font-weight: 600 !important; }
+
+@media (min-width: 768px) {
+  .code-mezunlar-page .justify-content-md-start { justify-content: flex-start !important; }
+  .code-mezunlar-page .col-md-3 { flex: 0 0 auto; width: 25%; }
+}
+
+@media (min-width: 992px) {
+  .code-mezunlar-page .d-lg-block { display: block !important; }
+  .code-mezunlar-page .d-lg-flex { display: flex !important; }
+  .code-mezunlar-page .d-lg-grid { display: grid !important; }
+  .code-mezunlar-page .d-lg-none { display: none !important; }
+  .code-mezunlar-page .flex-lg-nowrap { flex-wrap: nowrap !important; }
+  .code-mezunlar-page .flex-lg-row { flex-direction: row !important; }
+  .code-mezunlar-page .text-lg-start { text-align: left !important; }
+  .code-mezunlar-page .m-lg-0 { margin: 0 !important; }
+  .code-mezunlar-page .col-lg-6 { flex: 0 0 auto; width: 50%; }
+}
+
+@media (max-width: 992px) {
+  .code-mezunlar-page .w-md-75 { width: 75%; }
+}
+
+/* Container */
+.code-mezunlar-page .code-container {
+  width: 100%;
+  padding: 16px 12px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 992px) {
+  .code-mezunlar-page .container-lg {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .code-mezunlar-page .container-lg {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1200px) {
+  .code-mezunlar-page .code-container {
+    max-width: 1144px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .code-mezunlar-page .container-lg {
+    max-width: 1320px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .code-mezunlar-page .code-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.code-mezunlar-page .code-container-modal {
+  max-width: 856px;
+  margin: 0 auto !important;
+}
+
+/* Typography */
+.code-mezunlar-page .code-visby-h2-bold {
+  color: #13171a;
+  font-family: Visby CF Bold;
+  font-size: 56px;
+  line-height: 64px;
+}
+
+.code-mezunlar-page .code-visby-h3-bold {
+  color: #13171a;
+  font-family: Visby CF Bold;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.code-mezunlar-page .code-visby-h4-bold {
+  color: #13171a;
+  font-family: Visby CF Bold;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.code-mezunlar-page .code-visby-h5-bold {
+  color: #13171a;
+  font-family: Visby CF Bold;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.code-mezunlar-page .code-visby-h5-demibold {
+  color: #13171a;
+  font-family: Visby CF DemiBold;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.code-mezunlar-page .code-visby-body1-demibold {
+  color: #13171a;
+  font-family: Visby CF DemiBold;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.code-mezunlar-page .code-visby-body2-demibold {
+  color: #13171a;
+  font-family: Visby CF DemiBold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.code-mezunlar-page .code-visby-body2-medium {
+  color: #62717c;
+  font-family: Visby CF;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.code-mezunlar-page .code-visby-subtitle1-medium {
+  color: #62717c;
+  font-family: Visby CF DemiBold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.code-mezunlar-page .code-caveat-h3-semibold {
+  color: #cdd4e0;
+  font-family: Caveat;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.code-mezunlar-page .code-caveat-h6-bold {
+  color: #6537A6;
+  font-family: Caveat;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.code-mezunlar-page .code-visby-h2-demibold {
+  color: #13171a;
+  font-family: Visby CF DemiBold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  .code-mezunlar-page .code-visby-h4-bold {
+    line-height: 28px;
+    font-size: 20px;
+  }
+  .code-mezunlar-page .code-visby-body2-medium {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .code-mezunlar-page .code-visby-h3-bold {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .code-mezunlar-page .code-visby-h2-bold {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .code-mezunlar-page .code-visby-h5-bold,
+  .code-mezunlar-page .code-visby-h5-demibold {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .code-mezunlar-page .code-visby-body1-demibold {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* Buttons */
+.code-mezunlar-page .code-btn,
+.code-mezunlar-page .code-btn-base,
+.code-mezunlar-page .code-btn-black {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  border: 0;
+  font-family: Visby CF DemiBold;
+  font-size: 14px;
+  color: #20172a;
+  transition: all 0.5s;
+  cursor: pointer !important;
+}
+
+.code-mezunlar-page .code-btn-medium {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.code-mezunlar-page .code-btn-base {
+  background-color: #6537A6;
+  color: #fff;
+}
+
+.code-mezunlar-page .code-btn-base:hover,
+.code-mezunlar-page .code-btn-hover-dark:hover {
+  background-color: #3A294F !important;
+}
+
+.code-mezunlar-page .code-btn-black {
+  background: #13171a;
+  color: #fff;
+  border-radius: 1000px;
+}
+
+.code-mezunlar-page .code-btn-black:hover {
+  background-color: #374149;
+}
+
+.code-mezunlar-page .nav-active {
+  display: none !important;
+}
+
+/* Header / Nav */
+.code-mezunlar-page .code-nav {
+  position: relative;
+}
+
+.code-mezunlar-page .code-nav-desktop {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.code-mezunlar-page .code-nav-desktop li {
+  gap: 40px;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  color: #13171a;
+}
+
+.code-mezunlar-page .code-nav .code-nav-top {
+  border-bottom: 1px solid #f4f6fa;
+  padding: 0 24px;
+  height: 52px;
+}
+
+.code-mezunlar-page .code-nav .code-nav-top ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: -1px;
+  border-bottom: 2px solid transparent;
+}
+
+.code-mezunlar-page .code-nav .code-nav-top ul li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.code-mezunlar-page .code-nav .code-nav-top ul:first-of-type li {
+  color: #62717c;
+}
+
+.code-mezunlar-page .code-nav .code-nav-top ul:first-of-type .active {
+  color: #13171a;
+  font-family: "Visby CF DemiBold";
+  border-bottom: 2px solid #6537A6;
+}
+
+.code-mezunlar-page .code-nav .code-nav-top .code-nav-top-right li {
+  transition: 0.3s ease all;
+}
+
+.code-mezunlar-page .code-nav .code-nav-top .code-nav-top-right li:hover {
+  border-bottom: 2px solid #6537A6;
+}
+
+.code-mezunlar-page .code-nav .code-nav-bottom {
+  position: relative;
+  padding: 0 24px;
+  height: 80px;
+}
+
+.code-mezunlar-page .code-nav .code-navbar-menu-item {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.code-mezunlar-page .code-nav .code-navbar-menu-item li {
+  cursor: pointer;
+}
+
+.code-mezunlar-page .code-nav .mobile img {
+  display: block;
+}
+
+.code-mezunlar-page .code-nav .mobile-send,
+.code-mezunlar-page .code-nav .mobile-menu,
+.code-mezunlar-page .code-nav .mobile-close {
+  padding: 8px;
+  background-color: #f4f6fa;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.code-mezunlar-page .code-nav .mobile-close {
+  display: none;
+}
+
+.code-mezunlar-page .code-nav.mobile-open .mobile-close {
+  display: flex;
+}
+
+.code-mezunlar-page .code-nav.mobile-open .mobile-menu,
+.code-mezunlar-page .code-nav.mobile-open .mobile-send {
+  display: none;
+}
+
+.code-mezunlar-page .code-nav .before-btn {
+  cursor: pointer;
+}
+
+.code-mezunlar-page #code-navbar-menu-full {
+  position: static;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.code-mezunlar-page .code-dropdown-menu-top {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.code-mezunlar-page #code-navbar-menu-full.open .code-dropdown-menu-top {
+  visibility: visible;
+  z-index: 10;
+}
+
+.code-mezunlar-page .code-dropdown-menu {
+  padding-top: 8px;
+  border-radius: 20px;
+  z-index: 10;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transform: rotateX(-25deg);
+}
+
+.code-mezunlar-page #code-navbar-menu-full.open .code-dropdown-menu {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  transform: rotateX(0);
+  transition: all 0.4s, visibility 0s;
+}
+
+.code-mezunlar-page .code-dropdown-menu .code-dropdown-menu-item {
+  background-color: #f4f6fa;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.code-mezunlar-page .code-navbar-menu-item::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #6537A6;
+  bottom: 0;
+  left: var(--after-left, 0px);
+  transition: all 0.5s;
+  width: var(--after-width, 0px);
+}
+
+.code-mezunlar-page .code-navbar-menu-item li a {
+  padding: 10px 0;
+}
+
+.code-mezunlar-page .academy,
+.code-mezunlar-page .scholar {
+  padding: 8px !important;
+  display: grid !important;
+  width: 100%;
+  gap: 8px;
+}
+
+.code-mezunlar-page .academy-item,
+.code-mezunlar-page .scholar-item {
+  background-color: #fff;
+  border-radius: 16px;
+  transition: all 0.5s;
+}
+
+.code-mezunlar-page .academy-item a,
+.code-mezunlar-page .scholar-item a {
+  padding: 20px;
+  display: block;
+}
+
+.code-mezunlar-page .academy-item:hover,
+.code-mezunlar-page .scholar-item:hover {
+  background-color: #ebeef2;
+}
+
+.code-mezunlar-page .academy-item:hover .text span,
+.code-mezunlar-page .scholar-item:hover .text span {
+  background-color: #6537A6;
+}
+
+.code-mezunlar-page .academy-item:hover .text span svg path,
+.code-mezunlar-page .scholar-item:hover .text span svg path {
+  stroke: #fff;
+}
+
+.code-mezunlar-page .academy .text,
+.code-mezunlar-page .scholar .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.code-mezunlar-page .academy .text span,
+.code-mezunlar-page .scholar .text span {
+  padding: 6px;
+  border-radius: 50%;
+  background-color: #ebeef2;
+  transition: all 0.5s;
+}
+
+.code-mezunlar-page .academy .img,
+.code-mezunlar-page .scholar .img {
+  display: flex;
+  justify-content: center;
+}
+
+.code-mezunlar-page .academy .img img,
+.code-mezunlar-page .scholar .img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.code-mezunlar-page .academy {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.code-mezunlar-page .scholar {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu {
+  display: inline-flex;
+  width: 100%;
+  padding: 8px 8px 8px 40px;
+  background-color: #f4f6fa;
+  position: relative;
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 32px;
+  background: #6537A6;
+  border-radius: 6px 0 0 6px;
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu .code-nav-dropdown-left {
+  position: relative;
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu .code-nav-dropdown-left::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 96px;
+  top: var(--after-top, 0px);
+  background-color: white;
+  z-index: 1;
+  transition: all 0.2s;
+  border-radius: 16px;
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu .code-nav-dropdown-left::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: calc(var(--after-top, 0px) + 35px);
+  z-index: 2;
+  transition: all 0.2s;
+  right: -18px;
+  background: url("/mezunlar/Vector5.svg") center / contain no-repeat;
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu .code-nav-dropdown-left li {
+  padding: 16px 20px;
+  font-family: Visby CF;
+  border-radius: 16px;
+  width: 244px;
+  height: 96px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu .code-nav-dropdown-left li h4 {
+  font-family: Visby CF DemiBold;
+  color: #13171a;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu .code-nav-dropdown-left li p {
+  font-size: 14px;
+  color: #62717c;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu .code-nav-dropdown-right {
+  padding: 20px 32px;
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-left: 4px;
+  flex: 1;
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu .code-nav-dropdown-right-inner-item {
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu .code-nav-dropdown-right-inner-item.is-active {
+  display: flex;
+  opacity: 1;
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu .code-nav-dropdown-right-inner ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 0;
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu .code-nav-dropdown-right-inner ul li {
+  width: 33.33%;
+  padding: 0;
+  cursor: pointer;
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu .code-nav-dropdown-right-inner ul li:hover {
+  background-color: #f4f6fa;
+  border-radius: 16px;
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu .code-nav-dropdown-right-inner ul li a {
+  padding: 12px;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu .code-nav-dropdown-right-inner ul li .img {
+  width: 44px;
+  height: 44px;
+  background-color: #cdd4e0;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu .code-nav-dropdown-right-inner ul li .img img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu .code-nav-dropdown-right-inner ul li h4 {
+  font-family: Visby CF DemiBold;
+  color: #13171a;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.code-mezunlar-page #code-dropdown-slider-menu .code-nav-dropdown-right-inner ul li p {
+  font-size: 14px;
+  color: #62717c;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.code-mezunlar-page .eduleveltag {
+  display: inline-block;
+  background-color: #6537A6;
+  border-radius: 100px;
+  padding: 2px 10px;
+  margin-left: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #fff;
+}
+
+.code-mezunlar-page .mobile-dropdown {
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+  margin-top: 4px;
+}
+
+.code-mezunlar-page .mobile-dropdown-top {
+  padding: 20px;
+  border-bottom: 1px solid #f4f6fa;
+}
+
+.code-mezunlar-page .mobile-dropdown-top li {
+  color: #62717c;
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.code-mezunlar-page .mobile-dropdown-top li.active {
+  color: #13171a;
+  font-family: Visby CF DemiBold;
+}
+
+.code-mezunlar-page .mobile-dropdown-top li.active::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #6537A6;
+}
+
+.code-mezunlar-page .mobile-dropdown-bottom {
+  padding: 20px 8px;
+}
+
+.code-mezunlar-page .mobile-dropdown-bottom li {
+  padding: 12px;
+  font-family: Visby CF DemiBold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.code-mezunlar-page .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.32);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 99;
+}
+
+.code-mezunlar-page .overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.code-mezunlar-page header {
+  position: relative;
+  z-index: 100;
+}
+
+.code-mezunlar-page .code-nav:hover {
+  z-index: 100;
+}
+
+/* Main */
+.code-mezunlar-page .code-student-main {
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+}
+
+/* Hero */
+.code-mezunlar-page .slider-main {
+  padding: 24px 64px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 16px;
+  border: 0;
+  box-shadow: none;
+}
+
+.code-mezunlar-page .slider-main div [class^="col"] {
+  padding: 0;
+  margin: 0;
+}
+
+.code-mezunlar-page .slider-main .code-galery {
+  position: relative;
+  width: 360px;
+  height: 320px;
+}
+
+.code-mezunlar-page .slider-main .code-galery .code-img {
+  position: absolute;
+  padding: 4px;
+  display: inline-block;
+  visibility: hidden;
+  transition: 0.3s ease all;
+  opacity: 0;
+}
+
+.code-mezunlar-page .slider-main .code-galery .code-img.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.code-mezunlar-page .slider-main .code-galery img {
+  border-radius: 14px;
+  border: 0;
+  box-shadow: none;
+  object-fit: cover;
+}
+
+.code-mezunlar-page .slider-main .code-galery .code-svg img {
+  border-radius: 50%;
+}
+
+.code-mezunlar-page .slider-main .code-galery .code-img-1 { top: 24px; left: 72px; }
+.code-mezunlar-page .slider-main .code-galery .code-img-1 img { width: 64px; height: 64px; object-fit: cover; }
+.code-mezunlar-page .slider-main .code-galery .code-img-2 { top: 0; left: 144px; }
+.code-mezunlar-page .slider-main .code-galery .code-img-2 img { width: 88px; height: 88px; object-fit: cover; }
+.code-mezunlar-page .slider-main .code-galery .code-img-3 { top: 52px; right: 0; }
+.code-mezunlar-page .slider-main .code-galery .code-img-3 img { width: 112px; height: 112px; object-fit: cover; }
+.code-mezunlar-page .slider-main .code-galery .code-img-4 { top: 172px; right: 24px; }
+.code-mezunlar-page .slider-main .code-galery .code-img-4 img { width: 88px; height: 88px; object-fit: cover; }
+.code-mezunlar-page .slider-main .code-galery .code-img-5 { top: 96px; left: 96px; }
+.code-mezunlar-page .slider-main .code-galery .code-img-5 img { width: 136px; height: 136px; object-fit: cover; }
+.code-mezunlar-page .slider-main .code-galery .code-img-6 { bottom: 24px; right: 120px; }
+.code-mezunlar-page .slider-main .code-galery .code-img-6 img { width: 48px; height: 48px; object-fit: cover; }
+.code-mezunlar-page .slider-main .code-galery .code-img-7 { bottom: -8px; left: 96px; }
+.code-mezunlar-page .slider-main .code-galery .code-img-7 img { width: 80px; height: 80px; object-fit: cover; }
+.code-mezunlar-page .slider-main .code-galery .code-img-8 { top: 96px; left: -8px; }
+.code-mezunlar-page .slider-main .code-galery .code-img-8 img { width: 96px; height: 96px; object-fit: cover; }
+
+.code-mezunlar-page .slider-main .code-galery .code-svg {
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  width: 100%;
+  z-index: 1;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .code-mezunlar-page .slider-main .code-galery {
+    width: 288px;
+    height: 288px;
+  }
+  .code-mezunlar-page .slider-main .code-galery .code-img-1 { top: 28px; left: 59px; }
+  .code-mezunlar-page .slider-main .code-galery .code-img-1 img { width: 51.2px; height: 51.2px; }
+  .code-mezunlar-page .slider-main .code-galery .code-img-2 { top: 8px; left: 115px; }
+  .code-mezunlar-page .slider-main .code-galery .code-img-2 img { width: 70.3px; height: 70.3px; }
+  .code-mezunlar-page .slider-main .code-galery .code-img-3 { top: 52px; right: 0; }
+  .code-mezunlar-page .slider-main .code-galery .code-img-3 img { width: 89.5px; height: 89.5px; }
+  .code-mezunlar-page .slider-main .code-galery .code-img-4 { top: 148px; right: 19.2px; }
+  .code-mezunlar-page .slider-main .code-galery .code-img-4 img { width: 70.3px; height: 70.3px; }
+  .code-mezunlar-page .slider-main .code-galery .code-img-5 { top: 84px; left: 75px; }
+  .code-mezunlar-page .slider-main .code-galery .code-img-5 img { width: 108px; height: 108px; }
+  .code-mezunlar-page .slider-main .code-galery .code-img-6 { bottom: 45px; right: 96px; }
+  .code-mezunlar-page .slider-main .code-galery .code-img-6 img { width: 38.4px; height: 38.4px; }
+  .code-mezunlar-page .slider-main .code-galery .code-img-7 { bottom: 20px; left: 77px; }
+  .code-mezunlar-page .slider-main .code-galery .code-img-7 img { width: 64px; height: 64px; }
+  .code-mezunlar-page .slider-main .code-galery .code-img-8 { top: 85px; left: -8px; }
+  .code-mezunlar-page .slider-main .code-galery .code-img-8 img { width: 76.8px; height: 76.8px; }
+}
+
+@media screen and (max-width: 992px) {
+  .code-mezunlar-page .slider-main {
+    padding: 24px 16px;
+  }
+}
+
+/* Statistics */
+.code-mezunlar-page .code-home-statistics-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  align-items: start;
+}
+
+.code-mezunlar-page .code-home-statistics-main .left-part {
+  display: flex;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.code-mezunlar-page .code-home-statistics-main .left-part h4,
+.code-mezunlar-page .code-home-statistics-main .left-part .code-visby-h4-bold {
+  width: 65%;
+  margin: 0;
+  font-family: "Visby CF Bold", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.code-mezunlar-page .code-home-statistics-main .right-part h2,
+.code-mezunlar-page .code-home-statistics-main .right-part .code-visby-h3-bold {
+  color: #6537A6;
+}
+
+.code-mezunlar-page .code-home-statistics-main .right-part {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px 8px;
+  display: grid;
+  min-width: 0;
+}
+
+.code-mezunlar-page .code-home-statistics-main .right-part > div {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.code-mezunlar-page .code-home-statistics-main .right-part > div h2,
+.code-mezunlar-page .code-home-statistics-main .right-part > div .code-visby-h3-bold {
+  margin: 0;
+  font-family: "Visby CF Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.code-mezunlar-page .code-home-statistics-main .right-part > div p,
+.code-mezunlar-page .code-home-statistics-main .right-part > div .code-visby-body2-medium {
+  width: 75%;
+  margin: 0;
+  font-family: "Visby CF", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .code-mezunlar-page .code-home-statistics-main {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    text-align: center;
+  }
+  .code-mezunlar-page .code-home-statistics-main .left-part {
+    justify-content: center;
+  }
+  .code-mezunlar-page .code-home-statistics-main .left-part h4,
+  .code-mezunlar-page .code-home-statistics-main .left-part .code-visby-h4-bold {
+    width: 75%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .code-mezunlar-page .code-home-statistics-main .right-part {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+  .code-mezunlar-page .code-home-statistics-main .right-part > div p,
+  .code-mezunlar-page .code-home-statistics-main .right-part > div .code-visby-body2-medium {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* Partners */
+.code-mezunlar-page .partners-carousel {
+  display: flex;
+  gap: 8px;
+}
+
+.code-mezunlar-page .partners-carousel .carousel-imgs {
+  width: 70%;
+  flex: 1;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.code-mezunlar-page .partners-carousel img.carousel-img {
+  width: 100% !important;
+  border-radius: 20px;
+  max-height: 440px;
+  object-fit: cover;
+  display: block;
+}
+
+.code-mezunlar-page .partners-carousel .carousel {
+  width: 28%;
+}
+
+.code-mezunlar-page .partners-carousel .carousel .item {
+  display: block !important;
+  height: 439px;
+}
+
+.code-mezunlar-page .partners-carousel .carousel .item .content {
+  width: 100% !important;
+  height: 100%;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 0;
+}
+
+.code-mezunlar-page .partners-carousel .carousel .item .content .logo {
+  background: #f4f6fa;
+  border-radius: 16px;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.code-mezunlar-page .partners-carousel .carousel .pagination {
+  display: flex;
+  align-items: center;
+}
+
+.code-mezunlar-page .partners-carousel .carousel .pagination .left,
+.code-mezunlar-page .partners-carousel .carousel .pagination .right {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f4f6fa;
+  transition: background 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.code-mezunlar-page .partners-carousel .carousel .pagination .left:hover,
+.code-mezunlar-page .partners-carousel .carousel .pagination .right:hover {
+  background-color: #6537A6;
+}
+
+.code-mezunlar-page .partners-carousel .carousel .pagination .left:hover svg path,
+.code-mezunlar-page .partners-carousel .carousel .pagination .right:hover svg path {
+  stroke: #fff;
+}
+
+.code-mezunlar-page .partners-carousel .carousel .pagination span {
+  font-family: Visby CF DemiBold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #62717c;
+  margin: 0 16px;
+}
+
+@media screen and (max-width: 992px) {
+  .code-mezunlar-page .partners-carousel {
+    display: block;
+  }
+  .code-mezunlar-page .partners-carousel .carousel-imgs,
+  .code-mezunlar-page .partners-carousel .carousel {
+    width: 100%;
+  }
+  .code-mezunlar-page .partners-carousel .carousel {
+    margin-top: 4px;
+  }
+  .code-mezunlar-page .partners-carousel .carousel .item {
+    height: 100%;
+  }
+}
+
+/* Blog */
+.code-mezunlar-page .code-blog div[class^="col"] {
+  padding: 0;
+  margin: 0;
+}
+
+.code-mezunlar-page .code-blog .code-blog-nav {
+  display: inline-flex;
+  padding: 4px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  background-color: #ebeef2;
+  border-radius: 14px;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.code-mezunlar-page .code-blog .code-blog-nav .code-blog-tab {
+  flex: 0 0 auto;
+  min-height: 40px;
+  margin: 0;
+  padding: 10px 16px;
+  background-color: transparent;
+  border: 0;
+  font-family: Visby CF DemiBold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #48345d;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.5s;
+  white-space: nowrap;
+}
+
+.code-mezunlar-page .code-blog .code-blog-nav .code-blog-tab:hover {
+  background-color: #fff;
+  color: #48345d;
+}
+
+.code-mezunlar-page .code-blog .code-blog-nav .active {
+  background-color: #fff;
+  color: #48345d;
+}
+
+.code-mezunlar-page .code-blog .code-blog-nav .active:hover {
+  background-color: #fff;
+  color: #48345d;
+}
+
+.code-mezunlar-page .code-blog .code-blog-nav .code-blog-tab:focus-visible {
+  outline: 2px solid #48345d;
+  outline-offset: 2px;
+}
+
+.code-mezunlar-page .code-blog .code-blog-cards {
+  column-count: 3;
+  column-gap: 8px;
+}
+
+.code-mezunlar-page .code-blog .code-blog-cards .mx-auto {
+  column-span: all;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .code-mezunlar-page .code-blog .code-blog-cards {
+    column-count: 2;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .code-mezunlar-page .code-blog .code-blog-cards {
+    column-count: 1;
+  }
+}
+
+.code-mezunlar-page .code-blog .code-blog-cards .code-blog-cards-item-inner {
+  padding: 24px;
+  border-radius: 20px;
+  background: #fff;
+  gap: 16px;
+  margin-bottom: 8px;
+  transition: all 0.3s;
+  border: 0;
+}
+
+.code-mezunlar-page .code-blog .code-blog-cards .code-blog-cards-item-inner .code-blog-card-header-text {
+  gap: 16px;
+}
+
+.code-mezunlar-page .code-blog .code-blog-cards .code-blog-cards-item-inner .code-blog-card-header-btn span {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f6fa;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.code-mezunlar-page .code-blog .code-blog-cards .code-blog-cards-item {
+  display: none;
+  cursor: pointer;
+}
+
+.code-mezunlar-page .code-blog .code-blog-cards .code-blog-cards-item.is-shown {
+  display: inline-block;
+}
+
+.code-mezunlar-page .code-blog .code-blog-cards .code-blog-cards-item:hover .code-blog-cards-item-inner {
+  background: #f7f4fa;
+  border-color: #6537A6;
+}
+
+.code-mezunlar-page .code-blog .code-blog-cards .code-blog-cards-item:hover .code-blog-card-header-btn span {
+  background-color: #6537A6;
+}
+
+.code-mezunlar-page .code-blog .code-blog-cards .code-blog-cards-item:hover .code-blog-card-header-btn span svg path {
+  stroke: #fff;
+}
+
+.code-mezunlar-page .code-blog .more-btn {
+  margin-top: 32px;
+}
+
+/* Video */
+.code-mezunlar-page .code-video .tab-content {
+  width: 100% !important;
+  margin-top: 15px;
+}
+
+.code-mezunlar-page .code-video div [class^="col"] {
+  padding: 0 8px 8px 0;
+  margin: 0;
+  height: 360px;
+}
+
+.code-mezunlar-page .code-video div [class^="col"]:last-child {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .code-mezunlar-page .code-video div [class^="col"]:nth-child(even) {
+    padding-right: 0;
+  }
+  .code-mezunlar-page .code-video div [class^="col"] {
+    padding-bottom: 8px;
+    height: 224px;
+  }
+}
+
+.code-mezunlar-page .code-video .code-video-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.code-mezunlar-page .code-btn-black img,
+.code-mezunlar-page .more-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.code-mezunlar-page .code-video .code-video-cards .item {
+  display: none;
+}
+
+.code-mezunlar-page .code-video .code-video-cards .item.is-shown {
+  display: block;
+}
+
+.code-mezunlar-page .code-video .code-video-cards .code-video-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.code-mezunlar-page .code-video .code-video-cards .code-video-card .code-img {
+  width: 100%;
+  height: 100%;
+}
+
+.code-mezunlar-page .code-video .code-video-cards .code-video-card .code-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.code-mezunlar-page .code-video .code-video-cards .code-video-card span {
+  display: inline-flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(101, 55, 166, 0.42);
+}
+
+.code-mezunlar-page .code-video .code-video-cards .code-video-card p {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  color: #fff;
+}
+
+.code-mezunlar-page .code-video button {
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .code-mezunlar-page .code-video .code-video-cards .code-video-card span {
+    width: 48px;
+    height: 48px;
+  }
+  .code-mezunlar-page .code-video .code-video-cards .code-video-card p {
+    padding: 8px 12px;
+    font-size: 12px;
+    line-height: 16px;
+    bottom: 12px;
+    left: 12px;
+  }
+}
+
+.code-mezunlar-page .code-video-card-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh !important;
+  background-color: #13171a85;
+  z-index: 200;
+  padding: 12px 24px;
+  overflow-y: auto;
+  display: none;
+}
+
+.code-mezunlar-page .code-video-card-modal.is-open {
+  display: block;
+}
+
+.code-mezunlar-page .code-video-card-modal .video {
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70%;
+}
+
+.code-mezunlar-page .code-video-card-modal .video iframe {
+  height: 100%;
+  border: 0;
+}
+
+.code-mezunlar-page .code-video-card-modal .img {
+  width: 40px;
+  height: 40px;
+  background-color: #13171a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 0 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .code-mezunlar-page .code-video-card-modal .video iframe {
+    width: 300px !important;
+  }
+}
+
+/* Student modal */
+.code-mezunlar-page .student-detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #13171a31;
+  width: 100%;
+  min-height: 100vh;
+  display: none;
+  z-index: 100;
+}
+
+.code-mezunlar-page .student-detail.is-open {
+  display: block;
+}
+
+.code-mezunlar-page .student-detail .code-close-btn {
+  margin-top: 12px;
+  margin-right: 24px;
+  border-radius: 50% !important;
+  width: 40px;
+  height: 40px;
+}
+
+.code-mezunlar-page .student-detail-box {
+  padding: 64px 0 !important;
+  background-color: #f4f6fa;
+  border-radius: 24px 24px 0 0;
+}
+
+.code-mezunlar-page .student-detail-box-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.code-mezunlar-page .student-detail-box-about {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 80px;
+}
+
+.code-mezunlar-page .student-detail-box-about img {
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 50%;
+}
+
+.code-mezunlar-page .student-detail-box-about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.code-mezunlar-page .student-detail-box-about-text p {
+  color: #62717c;
+}
+
+.code-mezunlar-page .student-detail-box-about-text .social {
+  gap: 12px;
+}
+
+.code-mezunlar-page .student-detail-box-lesson .lesson-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.code-mezunlar-page .student-detail-box-lesson .lesson-items h5 {
+  margin-bottom: 20px;
+}
+
+.code-mezunlar-page .student-detail-box-lesson .lesson-items .lesson-item {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 16px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+
+.code-mezunlar-page .student-detail-box-lesson .lesson-items .lesson-item:hover {
+  background: #ebeef2;
+}
+
+.code-mezunlar-page .student-detail-box-lesson .lesson-items .lesson-item .img {
+  width: 100%;
+}
+
+.code-mezunlar-page .student-detail-box-lesson .lesson-items .lesson-item .img img {
+  max-width: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 880px) {
+  .code-mezunlar-page .student-detail .student-detail-box {
+    padding: 24px 16px 80px 16px !important;
+  }
+  .code-mezunlar-page .student-detail .student-detail-box-about {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+  .code-mezunlar-page .student-detail .student-detail-box-about img {
+    max-width: 160px;
+    min-width: 160px;
+    max-height: 160px;
+    min-height: 160px;
+    border-radius: 50%;
+  }
+  .code-mezunlar-page .student-detail .student-detail-box-about-text {
+    gap: 24px;
+  }
+  .code-mezunlar-page .student-detail .student-detail-box-about-text h3.code-caveat-h3-semibold {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .code-mezunlar-page .student-detail .student-detail-box-lesson .lesson-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Companies */
+.code-mezunlar-page .code-home-partners {
+  text-align: center;
+}
+
+.code-mezunlar-page .code-home-partners .partners-list {
+  margin-top: 24px;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 8px;
+}
+
+.code-mezunlar-page .code-home-partners .partners-list a {
+  max-width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #d9e2ea;
+  border-radius: 16px;
+  padding: 12px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.code-mezunlar-page .code-home-partners .partners-list a img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .code-mezunlar-page .companies p {
+    width: 100% !important;
+  }
+  .code-mezunlar-page .companies h5 {
+    width: 75% !important;
+    margin: 0 auto;
+  }
+  .code-mezunlar-page .code-home-partners .partners-list {
+    margin-top: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 24px;
+    grid-column-gap: 8px;
+    justify-items: center;
+  }
+  .code-mezunlar-page .code-home-partners .partners-list a:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+.code-mezunlar-page .companies .companies-list {
+  margin-top: 24px;
+  grid-row-gap: 24px;
+  grid-column-gap: 8px;
+}
+
+/* Footer */
+.code-mezunlar-page footer {
+  padding: 8px 0 0;
+  margin-top: 120px;
+}
+
+.code-mezunlar-page footer .code-footer {
+  background: #fff;
+  border-radius: 20px;
+}
+
+.code-mezunlar-page footer .code-footer .code-footer-section {
+  padding: 32px;
+  border-bottom: 1px solid #f4f6fa;
+}
+
+.code-mezunlar-page footer .code-footer .code-footer-section ul {
+  gap: 12px;
+}
+
+.code-mezunlar-page footer .code-footer .code-footer-section ul li a:hover {
+  text-decoration: underline;
+  color: #13171a;
+}
+
+.code-mezunlar-page footer .code-footer .code-footer-icon {
+  padding: 10px;
+  background: #f4f6fa;
+  transition: 0.3s ease all;
+}
+
+.code-mezunlar-page footer .code-footer .code-footer-icon:hover {
+  background: #6537A6;
+}
+
+.code-mezunlar-page footer .code-footer .code-footer-icon:hover svg path {
+  fill: #fff;
+}
+
+.code-mezunlar-page footer .code-footer .code-footer-communication {
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-gap: 16px;
+}
+
+.code-mezunlar-page footer .code-footer .code-footer-communication img {
+  padding: 8px;
+}
+
+.code-mezunlar-page footer .code-footer .code-footer-communication h6 {
+  font-size: 16px;
+  color: #62717c;
+  line-height: 24px;
+}
+
+.code-mezunlar-page footer .code-footer .code-footer-communication p {
+  font-size: 18px;
+  color: #13171a;
+  font-family: Visby CF DemiBold;
+  line-height: 28px;
+}
+
+.code-mezunlar-page footer .code-footer .code-footer-communication .code-footer-communication-info {
+  padding: 20px;
+  background: #f4f6fa;
+  border-radius: 20px;
+  gap: 12px;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+
+.code-mezunlar-page footer .code-footer .code-footer-communication .code-footer-communication-info:hover {
+  background: #ebeef2;
+}
+
+.code-mezunlar-page footer .code-footer .code-footer-communication .code-footer-communication-info div {
+  gap: 4px;
+}
+
+.code-mezunlar-page footer .code-footer .code-footer-menu {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+}
+
+.code-mezunlar-page footer .code-footer .code-footer-menu .code-footer-menu-list {
+  gap: 12px;
+}
+
+.code-mezunlar-page footer .code-footer .code-footer-menu .code-footer-menu-list h4 {
+  color: #13171a;
+  font-family: Visby CF DemiBold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.code-mezunlar-page footer .code-footer .code-footer-menu .code-footer-menu-list a {
+  font-size: 16px;
+  color: #62717c;
+  line-height: 24px;
+}
+
+.code-mezunlar-page footer .code-footer .accordion .first-section-accordion,
+.code-mezunlar-page footer .code-footer .accordion .second-section-accordion {
+  padding: 32px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.code-mezunlar-page footer .code-footer .accordion .first-section-accordion {
+  border-bottom: 1px solid #f4f6fa;
+}
+
+.code-mezunlar-page footer .code-footer .accordion .accordion-item {
+  border: none;
+}
+
+.code-mezunlar-page footer .code-footer .accordion .accordion-button {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  color: #13171a;
+  font-family: Visby CF DemiBold;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 !important;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.code-mezunlar-page footer .code-footer .accordion .accordion-button::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("/mezunlar/chevron-down.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.3s;
+}
+
+.code-mezunlar-page footer .code-footer .accordion .accordion-button.is-open::after {
+  transform: rotate(180deg);
+}
+
+.code-mezunlar-page footer .code-footer .accordion .accordion-body {
+  padding: 0;
+}
+
+.code-mezunlar-page footer .code-footer .accordion .accordion-body ul {
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.code-mezunlar-page footer .code-footer .accordion .accordion-body ul a {
+  font-size: 16px;
+  color: #62717c;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .code-mezunlar-page footer .code-footer .code-footer-communication {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .code-mezunlar-page footer .code-footer .code-footer-communication p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .code-mezunlar-page .academy {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .code-mezunlar-page .academy {
+    grid-template-columns: 1fr;
+  }
+}
+
+.code-mezunlar-page .code-caveat-h3-semibold {
+  color: #6537A6;
+}
+
+.code-mezunlar-page .student-detail-box {
+  background-color: #f1f6f9;
+}

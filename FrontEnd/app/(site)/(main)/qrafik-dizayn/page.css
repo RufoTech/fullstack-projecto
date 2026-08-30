@@ -1,0 +1,111 @@
+html,
+body {
+  background: #F1F6F9 !important;
+}
+
+.qrafik-dizayn-root {
+  background-color: transparent !important;
+  font-family: "Visby CF", sans-serif;
+  color: #13171a;
+  width: 100%;
+  min-height: 100%;
+}
+
+.qrafik-dizayn-root img.lazy {
+  min-height: 1px;
+}
+
+.qrafik-dizayn-root img:is([sizes="auto" i], [sizes^="auto," i]) {
+  contain-intrinsic-size: 3000px 1500px;
+}
+
+.qrafik-dizayn-root img.wp-smiley,
+.qrafik-dizayn-root img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 0.07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+  max-width: none !important;
+}
+
+.qrafik-dizayn-root img,
+.qrafik-dizayn-root svg {
+  max-width: none;
+}
+
+.qrafik-dizayn-root img:not(.emoji):not(.wp-smiley) {
+  display: revert;
+  height: revert;
+}
+
+.qrafik-dizayn-root .studio-focus-lead {
+  max-width: 640px;
+  margin: 0 0 20px;
+  color: #4b5563;
+}
+
+.qrafik-dizayn-root .studio-focus-cards {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr) !important;
+  gap: 12px !important;
+}
+
+.qrafik-dizayn-root .studio-focus-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0 0 16px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.qrafik-dizayn-root .studio-focus-card img {
+  width: 100% !important;
+  height: 160px !important;
+  object-fit: cover !important;
+  border-radius: 0 !important;
+}
+
+.qrafik-dizayn-root .studio-focus-card > div {
+  padding: 0 16px;
+}
+
+.qrafik-dizayn-root .studio-focus-card h6,
+.qrafik-dizayn-root .studio-focus-card .h6 {
+  margin-bottom: 4px;
+}
+
+.qrafik-dizayn-root .studio-focus-card p {
+  margin: 0;
+  color: #5b6570;
+}
+
+@media screen and (max-width: 1200px) {
+  .qrafik-dizayn-root .studio-focus-cards {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .qrafik-dizayn-root .studio-focus-cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .qrafik-dizayn-root .studio-focus-card img {
+    height: 140px !important;
+    border-radius: 0 !important;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .qrafik-dizayn-root .studio-focus-cards {
+    grid-template-columns: 1fr !important;
+  }
+}

@@ -1,0 +1,1000 @@
+﻿.code-career-page {
+  background-color: transparent;
+  font-family: "Visby CF";
+  color: #20172a;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.code-career-page *,
+.code-career-page *::before,
+.code-career-page *::after {
+  box-sizing: border-box;
+}
+
+.code-career-page h1,
+.code-career-page h2,
+.code-career-page h3,
+.code-career-page h4,
+.code-career-page h5,
+.code-career-page h6,
+.code-career-page p,
+.code-career-page ul,
+.code-career-page li,
+.code-career-page a,
+.code-career-page img,
+.code-career-page svg,
+.code-career-page section,
+.code-career-page main,
+.code-career-page div,
+.code-career-page span,
+.code-career-page button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.code-career-page a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.code-career-page a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.code-career-page img,
+.code-career-page svg {
+  vertical-align: middle;
+  max-width: none;
+}
+
+.code-career-page button {
+  background: none;
+  font-family: inherit;
+}
+
+/* Bootstrap-like utilities used on this page */
+.code-career-page .d-flex {
+  display: flex !important;
+}
+
+.code-career-page .d-grid {
+  display: grid !important;
+}
+
+.code-career-page .d-none {
+  display: none !important;
+}
+
+.code-career-page .flex-column {
+  flex-direction: column !important;
+}
+
+.code-career-page .flex-nowrap {
+  flex-wrap: nowrap !important;
+}
+
+.code-career-page .align-items-center {
+  align-items: center !important;
+}
+
+.code-career-page .justify-content-center {
+  justify-content: center !important;
+}
+
+.code-career-page .justify-content-between {
+  justify-content: space-between !important;
+}
+
+.code-career-page .mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.code-career-page .m-auto {
+  margin: auto !important;
+}
+
+.code-career-page .mb-1 {
+  margin-bottom: 0.25rem !important;
+}
+
+.code-career-page .mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.code-career-page .mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.code-career-page .mt-1 {
+  margin-top: 0.25rem !important;
+}
+
+.code-career-page .pe-0 {
+  padding-right: 0 !important;
+}
+
+.code-career-page .pe-4 {
+  padding-right: 1.5rem !important;
+}
+
+.code-career-page .gap-4 {
+  gap: 1.5rem !important;
+}
+
+.code-career-page .text-center {
+  text-align: center !important;
+}
+
+.code-career-page .text-end {
+  text-align: right !important;
+}
+
+.code-career-page .text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.code-career-page .w-75 {
+  width: 75%;
+}
+
+.code-career-page .w-65 {
+  width: 65%;
+}
+
+.code-career-page .col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.code-career-page .col-5 {
+  flex: 0 0 auto;
+  width: 41.66666667%;
+}
+
+.code-career-page .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.code-career-page .h-100 {
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .code-career-page .justify-content-md-start {
+    justify-content: flex-start !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .code-career-page .d-lg-block {
+    display: block !important;
+  }
+
+  .code-career-page .d-lg-flex {
+    display: flex !important;
+  }
+
+  .code-career-page .flex-lg-row {
+    flex-direction: row !important;
+  }
+
+  .code-career-page .m-lg-0 {
+    margin: 0 !important;
+  }
+
+  .code-career-page .pe-lg-0 {
+    padding-right: 0 !important;
+  }
+
+  .code-career-page .pe-lg-4 {
+    padding-right: 1.5rem !important;
+  }
+
+  .code-career-page .gap-lg-0 {
+    gap: 0 !important;
+  }
+
+  .code-career-page .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .code-career-page .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .code-career-page .col-lg-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+
+  .code-career-page .col-lg-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+
+  .code-career-page .col-lg-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+}
+
+@media (max-width: 992px) {
+  .code-career-page .w-md-75 {
+    width: 75%;
+  }
+}
+
+/* Typography */
+.code-career-page .code-visby-h3-bold {
+  color: #13171a;
+  font-family: Visby CF Bold;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.code-career-page .code-visby-h4-bold,
+.code-career-page .code-scholar-visby-h4-bold {
+  color: #13171a;
+  font-family: Visby CF Bold;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.code-career-page .code-visby-body1-demibold {
+  color: #13171a;
+  font-family: Visby CF DemiBold;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.code-career-page .code-visby-body2-demibold {
+  color: #13171a;
+  font-family: Visby CF DemiBold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.code-career-page .code-visby-body2-medium {
+  color: #62717c;
+  font-family: Visby CF;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.code-career-page .code-visby-subtitle1-medium {
+  color: #62717c;
+  font-family: Visby CF DemiBold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.code-career-page .code-caveat-h3-bold {
+  color: #6537A6;
+  font-family: Caveat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+@media only screen and (max-width: 768px) {
+  .code-career-page .code-visby-h4-bold,
+  .code-career-page .code-scholar-visby-h4-bold {
+    line-height: 28px;
+    font-size: 20px;
+  }
+
+  .code-career-page .code-visby-body2-medium {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .code-career-page .code-visby-h3-bold {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .code-career-page .code-visby-body1-demibold {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* Buttons */
+.code-career-page .code-btn,
+.code-career-page .code-btn-base,
+.code-career-page .code-btn-black {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  border: 0;
+  font-family: Visby CF DemiBold;
+  font-size: 14px;
+  color: #20172a;
+  transition: all 0.5s;
+  cursor: pointer !important;
+}
+
+.code-career-page .code-btn-medium {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.code-career-page .code-btn-base {
+  background-color: #6537A6;
+  color: #fff;
+}
+
+.code-career-page .code-btn-base:hover,
+.code-career-page .code-btn-hover-dark:hover {
+  background-color: #3A294F !important;
+  color: #fff;
+}
+
+.code-career-page .code-btn-black {
+  background: #13171a;
+  color: #fff;
+  border-radius: 1000px;
+}
+
+.code-career-page .code-btn-black:hover {
+  background-color: #374149;
+}
+
+/* Main column gap */
+.code-career-page .code-career-main {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+/* A) Hero */
+.code-career-page .career-slider-main {
+  padding: 40px 56px;
+  background-color: #fff;
+  margin-top: 16px;
+  margin-bottom: 64px;
+  border-radius: 24px;
+  flex-wrap: wrap;
+  border: 1px solid #d9e2ea;
+  box-shadow: 0 12px 28px rgba(101, 55, 166, 0.05);
+}
+
+.code-career-page .career-slider-main div[class^="col"] {
+  padding: 0;
+  margin: 0;
+}
+
+.code-career-page .career-slider-main .career-slider-main-img {
+  display: flex;
+  justify-content: center;
+}
+
+.code-career-page .career-slider-main img {
+  max-width: 100%;
+  min-width: 320px;
+  border-radius: 20px;
+}
+
+.code-career-page .career-slider-main .career-slider-main-content {
+  margin-right: 40px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #fff;
+}
+
+.code-career-page .career-slider-main .career-slider-main-content h1 {
+  font-style: normal;
+  font-family: "Visby CF Bold";
+  line-height: 48px;
+}
+
+.code-career-page .career-slider-main .slider-main-content-sub-title {
+  font-family: Visby CF Bold;
+  font-size: 36px;
+  color: #13171a;
+}
+
+@media screen and (max-width: 992px) {
+  .code-career-page .career-slider-main {
+    padding: 24px 16px;
+  }
+
+  .code-career-page .career-slider-main .career-slider-main-content {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .code-career-page .career-slider-main .career-slider-main-content h1 {
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .code-career-page .career-slider-main img {
+    max-width: 240px;
+    min-width: 240px;
+    height: 240px;
+    object-fit: cover;
+  }
+}
+
+/* B) Statistics */
+.code-career-page .code-home-statistics-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.code-career-page .code-home-statistics-main .right-part h2,
+.code-career-page .code-home-statistics-main .right-part .code-visby-h3-bold {
+  color: #6537A6;
+}
+
+.code-career-page .code-home-statistics-main .right-part {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px 8px;
+}
+
+@media screen and (max-width: 992px) {
+  .code-career-page .code-home-statistics-main {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    text-align: center;
+  }
+
+  .code-career-page .code-home-statistics-main .left-part h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .code-career-page .code-home-statistics-main .right-part {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+}
+
+/* C) Scholar / activity */
+.code-career-page .code-scholar-about div[class^="col"] {
+  padding: 0;
+  margin: 0;
+}
+
+.code-career-page .code-scholar-about .code-scholar-about-box {
+  box-sizing: border-box;
+  height: auto;
+  min-height: 310px;
+}
+
+.code-career-page .code-scholar-about h2 {
+  font-size: 36px;
+  line-height: 48px;
+  font-family: Visby CF Bold;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.code-career-page .code-scholar-about-box {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 24px;
+  border: 1px solid #d9e2ea;
+}
+
+.code-career-page .code-scholar-about-box-left {
+  padding-right: 24px;
+}
+
+.code-career-page .code-scholar-about-box-right {
+  position: relative;
+  width: 100%;
+}
+
+.code-career-page .code-scholar-about-box-right .img {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.code-career-page .code-scholar-about-box-right .img.active {
+  height: 40vh;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+  transition-delay: 0.3s;
+}
+
+.code-career-page .code-scholar-about-box-right img {
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 16px;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.code-career-page .code-scholar-about-option {
+  padding: 16px;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.code-career-page .code-scholar-about-option .text {
+  padding-left: 16px;
+  max-width: 100%;
+}
+
+.code-career-page .code-scholar-about-option .text h3 {
+  padding-bottom: 8px;
+}
+
+.code-career-page .code-scholar-about-option .text p {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.code-career-page .code-scholar-about-option.active {
+  background-color: #f7f4fa;
+}
+
+.code-career-page .code-scholar-about-option.active .text p {
+  max-height: 100vh;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.code-career-page .code-scholar-about-option.active::after {
+  content: "";
+  width: 10%;
+  height: 3px;
+  animation: career-identifier 10s linear forwards;
+  background-color: #6537A6;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes career-identifier {
+  to {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .code-career-page .code-scholar-about .code-scholar-about-box {
+    height: 100%;
+  }
+
+  .code-career-page .code-scholar-about .code-scholar-about-box-right .img {
+    display: none;
+  }
+
+  .code-career-page .code-scholar-about .code-scholar-about-box-left {
+    padding: 0 !important;
+  }
+
+  .code-career-page .code-scholar-about h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+/* D) Collective */
+.code-career-page .code-career-collective-box {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 24px;
+  border: 1px solid #d9e2ea;
+}
+
+.code-career-page .code-career-collective-box h3 {
+  margin-bottom: 8px;
+}
+
+.code-career-page .code-career-collective-box .people {
+  padding: 24px 0;
+}
+
+.code-career-page .code-career-collective-box .people-item {
+  width: auto;
+  padding: 0 6px;
+  cursor: pointer;
+}
+
+.code-career-page .code-career-collective-box .people .people-item .img {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.code-career-page .code-career-collective-box .people .people-item img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  transition: 0.3s ease all;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 12px rgba(101, 55, 166, 0.16);
+}
+
+.code-career-page .code-career-collective-box .people .people-item img:hover {
+  width: 60px;
+  height: 60px;
+}
+
+.code-career-page .code-career-collective-box button span {
+  display: flex;
+  width: 20px;
+  height: 20px;
+}
+
+.code-career-page .code-career-collective-box button span img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .code-career-page .code-career-collective .code-career-collective-box {
+    padding: 24px;
+  }
+
+  .code-career-page .code-career-collective .code-career-collective-box .people-part .people-item:nth-child(-n + 3) {
+    display: none;
+  }
+
+  .code-career-page .code-career-collective .code-career-collective-box .people img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .code-career-page .code-career-collective .code-career-collective-box .people .people-item .img {
+    height: 40px;
+  }
+
+  .code-career-page .code-career-collective .code-career-collective-box .title p {
+    width: 100% !important;
+  }
+
+  .code-career-page .code-career-collective .code-career-collective-box h3 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .code-career-page .code-career-collective .code-career-collective-box .people-part .people-item:nth-child(-n + 5) {
+    display: none;
+  }
+}
+
+/* E) Advice sticky cards */
+.code-career-page .code-career-advice {
+  position: relative;
+}
+
+.code-career-page .code-career-advice div[class^="col"] {
+  padding: 0;
+  margin: 0;
+}
+
+.code-career-page .code-career-advice-box {
+  position: relative;
+  margin-top: 24px !important;
+  background-color: #fff;
+  border-radius: 24px;
+  border: 1px solid #d9e2ea;
+}
+
+.code-career-page .code-career-advice-box-item {
+  padding: 24px;
+  border-top: 4px solid #e3e9ef;
+  border-radius: 20px;
+  background-color: #fff;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.code-career-page .code-career-advice-box-item:nth-child(1) {
+  top: 0px;
+}
+
+.code-career-page .code-career-advice-box-item:nth-child(2) {
+  top: 70px;
+}
+
+.code-career-page .code-career-advice-box-item:nth-child(3) {
+  top: 140px;
+}
+
+.code-career-page .code-career-advice-box-item:nth-child(4) {
+  top: 210px;
+}
+
+.code-career-page .code-career-advice-box-item:nth-child(5) {
+  top: 280px;
+}
+
+.code-career-page .code-career-advice-box-item:nth-child(6) {
+  top: 350px;
+}
+
+.code-career-page .code-career-advice-box-item .title .circle {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background-color: #6537A6;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.code-career-page .code-career-advice-box-item .title .circle span {
+  display: inline-flex;
+  color: #fff;
+  font-family: Visby CF DemiBold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.code-career-page .code-career-advice-box-item .content {
+  margin-top: 24px;
+}
+
+.code-career-page .code-career-advice-box-item .content .text {
+  margin-right: 24px;
+  white-space: pre-line;
+}
+
+.code-career-page .code-career-advice-box-item .content img {
+  max-width: 100%;
+  min-width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+
+/* Overlay */
+.code-career-page .career-detail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #13171a31;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 200;
+}
+
+.code-career-page .career-detail .career-detail-top {
+  height: 64px;
+}
+
+.code-career-page .career-detail .code-close-btn {
+  margin-top: 12px;
+  margin-right: 24px;
+  border-radius: 50% !important;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+.code-career-page .career-detail .code-close-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.code-career-page .career-detail-box {
+  padding: 64px 0 !important;
+  background-color: #f1f6f9;
+  border-radius: 24px 24px 0 0;
+  position: relative;
+  height: calc(100vh - 64px);
+  overflow-y: scroll;
+}
+
+.code-career-page .career-detail-box::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  width: 50px;
+  height: 3px;
+  background-color: #6537A6;
+}
+
+.code-career-page .code-container-modal {
+  max-width: 856px;
+  margin: 0 auto !important;
+  padding: 0 16px;
+}
+
+.code-career-page .career-detail-box-content p {
+  color: #62717c;
+  font-family: Visby CF;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .code-career-page .career-detail-box {
+    padding: 16px !important;
+  }
+}
+
+/* F) Partners carousel */
+.code-career-page .partners-carousel {
+  display: flex;
+  gap: 8px;
+}
+
+.code-career-page .partners-carousel .carousel-imgs {
+  width: 70%;
+  flex: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.code-career-page .partners-carousel img.carousel-img {
+  width: 100% !important;
+  border-radius: 20px;
+  max-height: 440px;
+  object-fit: cover;
+  display: block;
+}
+
+.code-career-page .partners-carousel .carousel {
+  width: 28%;
+  overflow: hidden;
+}
+
+.code-career-page .partners-carousel .carousel .item {
+  display: block !important;
+  height: 439px;
+}
+
+.code-career-page .partners-carousel .carousel .item .content {
+  width: 100% !important;
+  height: 100%;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 24px;
+  border: 1px solid #d9e2ea;
+}
+
+.code-career-page .partners-carousel .carousel .item .content .logo {
+  background: #f4f6fa;
+  border-radius: 16px;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.code-career-page .partners-carousel .carousel .item .content .studio-wordmark {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  color: #111;
+}
+
+.code-career-page .partners-carousel .carousel .item .content p {
+  margin-bottom: 12px;
+}
+
+.code-career-page .partners-carousel .carousel .pagination {
+  display: flex;
+  align-items: center;
+}
+
+.code-career-page .partners-carousel .carousel .pagination .left,
+.code-career-page .partners-carousel .carousel .pagination .right {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  border-radius: 50%;
+  background: #f4f6fa;
+  transition: background 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.code-career-page .partners-carousel .carousel .pagination .left:hover,
+.code-career-page .partners-carousel .carousel .pagination .right:hover {
+  background-color: #6537A6;
+}
+
+.code-career-page .partners-carousel .carousel .pagination .left:hover svg path,
+.code-career-page .partners-carousel .carousel .pagination .right:hover svg path {
+  stroke: #fff;
+}
+
+.code-career-page .partners-carousel .carousel .pagination span {
+  font-family: Visby CF DemiBold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #62717c;
+  margin: 0 16px;
+}
+
+.code-career-page .partners-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.code-career-page .partners-track > .item {
+  flex: 0 0 100%;
+  min-width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .code-career-page .partners-carousel {
+    display: block;
+  }
+
+  .code-career-page .partners-carousel .carousel-imgs {
+    width: 100%;
+  }
+
+  .code-career-page .partners-carousel .carousel {
+    width: 100%;
+    margin-top: 4px;
+  }
+
+  .code-career-page .partners-carousel .carousel .item {
+    height: 100%;
+  }
+
+  .code-career-page .partners-carousel .content {
+    margin-left: 0 !important;
+  }
+}
+
+.code-career-page .code-scholar-about-option:hover {
+  background-color: #f7f4fa;
+}
+
+.code-career-page .code-btn-medium.code-btn-base {
+  border-radius: 14px;
+}
