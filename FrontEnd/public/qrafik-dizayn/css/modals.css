@@ -1,0 +1,105 @@
+.qrafik-dizayn-root { --accent:#ffc800; }
+
+    .qrafik-dizayn-root .overlay {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,.55);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; visibility: hidden; pointer-events: none;
+      transition: opacity .2s ease, visibility .2s ease;
+      z-index: 9999;
+    }
+    .qrafik-dizayn-root .overlay.is-open { opacity: 1; visibility: visible; pointer-events: auto; display:flex !important}
+
+    .qrafik-dizayn-root .popup {
+      background: var(--accent);
+      color: #000;
+      width: 500px; max-width: 90%;
+      border-radius: 14px;
+      padding: 26px 28px;
+      box-shadow: 0 18px 45px rgba(0,0,0,.35);
+      text-align: center;
+    }
+    .qrafik-dizayn-root .popup p { margin: 0; line-height: 1.45; font-size: 16px; }
+    .qrafik-dizayn-root .popup-buttons {
+      margin-top: 20px;
+      display: flex; gap: 12px;
+    }
+    .qrafik-dizayn-root .popupbtn {
+      flex: 1;
+      border: 0; border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 15px; cursor: pointer;
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .qrafik-dizayn-root .btn-left { background: #fff; color: #000; }
+    .qrafik-dizayn-root .btn-right { background: #000; color: #fff; }
+    .qrafik-dizayn-root .btn-right:hover { background: #222;color:white }
+    .qrafik-dizayn-root .btn-left:hover{background:#e0dede}
+    .qrafik-dizayn-root .icon {
+      width: 18px; height: 18px; display: inline-block;
+      vertical-align: -3px;
+    }
+
+
+
+/* Education Level Chooser Modal Styles */
+.qrafik-dizayn-root .edu-overlay {
+  position:fixed;inset:0;background:rgba(0,0,0,.85);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;visibility:hidden;transition:.25s;z-index:99999;
+}
+.qrafik-dizayn-root .edu-overlay.show{opacity:1;visibility:visible;}
+.qrafik-dizayn-root .edu-popup {
+  display:flex;flex-wrap:wrap;
+  width:750px;max-width:75%;
+  background:#fff;border-radius:12px;overflow:hidden;
+}
+.qrafik-dizayn-root .edu-left {
+  background: #F3EEE2;
+  flex:1 1 50%;padding:60px 40px;text-align:center;
+  display:flex;flex-direction:column;justify-content:center;
+}
+.qrafik-dizayn-root .edu-left h2{font-size:28px;margin:0 0 10px;color:#000;}
+.qrafik-dizayn-root .edu-left p{font-size:16px;line-height:1.4;color:#333;margin:0 0 30px;}
+.qrafik-dizayn-root .edu-btns{display:flex;gap:15px;justify-content:center;flex-wrap:wrap;}
+.qrafik-dizayn-root .edu-btns a{
+  background:#FFC800;color:#000;text-decoration:none;font-weight:400;
+  padding:14px 26px;border-radius:8px;font-size:15px;
+}
+.qrafik-dizayn-root .edu-right{height:400px}
+.qrafik-dizayn-root .edu-right img{    width: auto;
+    height: 400px;
+}
+.qrafik-dizayn-root .edu-left .code-visby-h4-bold{font-size: 40px; line-height: 48px; }
+@media(max-width:768px){
+  .qrafik-dizayn-root .edu-btns{margin-bottom:20px}
+  .qrafik-dizayn-root .edu-popup{flex-direction:column;}
+  .qrafik-dizayn-root .edu-right{display:none}
+  .qrafik-dizayn-root .edu-right-mobile{display:block !important;background: #F3EEE2;order:-1;height:auto !important;padding:10px !important;width:100%}
+  .qrafik-dizayn-root .edu-left{padding:0px 6px !important;width:100%}
+  .qrafik-dizayn-root .edu-right-mobile img{width:100% !important;height:auto !important;}
+  .qrafik-dizayn-root .edu-left p{margin-bottom:10px !important;}
+  .qrafik-dizayn-root .edu-left .code-visby-h4-bold{font-size: 26px; line-height: 32px; }
+
+}
+@media(max-height:840px){
+   .qrafik-dizayn-root .edu-right-mobile img{display:block;margin:auto;max-width:75% !important;}
+}
+.qrafik-dizayn-root .edulevel_hide{
+  display:none !important;
+}
+.qrafik-dizayn-root .chosen-starter .edulevel_starter,
+.qrafik-dizayn-root .chosen-upgrader .edulevel_upgrader {
+  display:flex !important;
+}
+.qrafik-dizayn-root #code-dropdown-slider-menu{width:100%;}
+.qrafik-dizayn-root .code-nav-dropdown-right{flex-grow:1}
+
+.qrafik-dizayn-root .eduleveltag{
+  font-size: 13px !important;
+  margin-top: 9px;
+  margin-right: 10px;
+  margin-left: 0 !important;
+  background-color: #f3f3f3 !important;
+  padding-top: 5px !important;
+}
